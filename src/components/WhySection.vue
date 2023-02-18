@@ -59,17 +59,27 @@
     margin: 20px 0;
     font-size: 16px;
   }
+  @media (max-width: 480px) {
+    & {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
 }
 .row {
   margin: var(--marginTopBotton) 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 480px) {
+     row-gap:  200px;
+  }
   .image {
     position: relative;
     img {
       position: absolute;
       left: -10px;
+      width: 100%;
     }
   }
   .content {

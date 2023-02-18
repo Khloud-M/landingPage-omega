@@ -47,11 +47,17 @@
 .feedback {
   margin: var(--marginTopBotton) 0;
   padding: 20px 130px;
+  @media (max-width: 480px) {
+    & {
+      padding: 20px 10px;
+    }
+  }
   .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 0;
+
     .button {
       border: 1px solid var(--main-color);
       width: 180px;
@@ -83,14 +89,33 @@
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #efeffe;
+  @media (max-width: 480px) {
+      & {
+        row-gap: 20px;
+       
+      }
+    }
+  .image {
+    img {
+      width: 100%;
+    }
+  }
 
   .content {
     width: 30%;
     height: 300px;
     margin: auto 0;
-    span{
-        display: inline-block;
-        margin-left: 15px;
+    @media (max-width: 480px) {
+      & {
+        width: 100%;
+      }
+      img{
+        width: 35px;
+      }
+    }
+    span {
+      display: inline-block;
+      margin-left: 15px;
     }
   }
 }

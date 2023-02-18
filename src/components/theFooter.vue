@@ -8,7 +8,7 @@
             <p>There are many variations of passages of Lorem Ipsum</p>
             <p>but the majority have suffered alteration.</p>
           </div>
-          <div class="button col-lg-5">
+          <div class="buton col-lg-5">
             <input type="email" placeholder="Email here" />
             <button>send</button>
           </div>
@@ -46,9 +46,7 @@
           </ul>
         </div>
       </div>
-      <div class="by">
-        Copyright & Design By @Toqa Elbauomy
-      </div>
+      <div class="by">Copyright & Design By @Toqa Elbauomy</div>
       <div class="privacy">
         <h6>Terms of use</h6>
         |
@@ -63,6 +61,12 @@ footer {
   padding: 120px 0;
   margin-top: 150px;
   position: relative;
+  @media (max-width: 480px) {
+    & {
+      margin-top: 200px;
+      padding: 200px 0;
+    }
+  }
   .contact_us {
     position: absolute;
     width: 60%;
@@ -73,19 +77,32 @@ footer {
     background-color: #ea6b13;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 20px 50px;
     color: #fff;
-    .button {
+    @media (max-width: 480px) {
+      & {
+        width: 100%;
+        left: 0%;
+        height: 300px;
+      }
+    }
+    .buton {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       background-color: #fff;
       border-radius: 20px;
       height: 70px;
-      // text-align: center;
       padding: 0 20px;
       line-height: 70px;
+      @media (max-width: 480px) {
+        & {
+          justify-content: center;
+          width: 250px;
+        }
+      }
       button {
         background: none;
         border: none;
@@ -120,6 +137,11 @@ footer {
   ul {
     margin: 0;
     padding: 0;
+    @media (max-width: 480px) {
+      & {
+        margin: 20px 0;
+      }
+    }
     h6 {
       font-size: 18px;
     }
@@ -139,17 +161,28 @@ footer {
     flex-direction: row;
     column-gap: 30px;
     margin-top: 40px;
+    @media (max-width: 480px) {
+      & {
+        left: 0;
+        width: 100%;
+        padding: 0 10px;
+
+      }
+    }
     h6 {
       color: #677294;
       cursor: pointer;
     }
   }
-  .by{
+  .by {
     color: #677294;
     position: absolute;
     margin-top: 40px;
-
-
+    @media (max-width: 480px) {
+      & {
+        margin-top: 100px;
+      }
+    }
   }
 }
 </style>

@@ -1,18 +1,24 @@
 <template>
   <section class="provideSection">
     <div class="container">
-     <div class="heading">
+      <div class="heading">
         <h2>We provide various kind of service for you</h2>
-      <p>
-        After Much Research And Study Of Previous Works, We Have Determined That
-        We Come Up With A Set Of Characteristics That Benefit Our User
-      </p>
-     </div>
+        <p>
+          After Much Research And Study Of Previous Works, We Have Determined
+          That We Come Up With A Set Of Characteristics That Benefit Our User
+        </p>
+      </div>
       <div class="row">
         <div class="col-lg-3 service" v-for="serv in services" :key="serv">
           <div class="inner-service">
             <div class="image">
-              <img :src="serv.image" alt="serv.name" class="image1" width="90" height="90" />
+              <img
+                :src="serv.image"
+                alt="serv.name"
+                class="image1"
+                width="90"
+                height="90"
+              />
               <img :src="serv.image2" class="image2" />
             </div>
             <h4>{{ serv.title }}</h4>
@@ -31,13 +37,20 @@
   margin: var(--marginTopBotton) 0;
   text-align: center;
 }
-.heading{
-    width: 40%;
-    margin: auto;
-    p{
-        margin: 20px 0;
-        font-size: 16px;
+.heading {
+  width: 40%;
+  margin: auto;
+  p {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    & {
+      width: 100%;
+      padding: 0 10px;
+
     }
+  }
 }
 .row {
   display: flex;

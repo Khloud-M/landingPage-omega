@@ -29,6 +29,13 @@
     margin: 20px 0;
     font-size: 16px;
   }
+  @media (max-width: 480px) {
+    & {
+      width: 100%;
+      padding: 0 10px;
+
+    }
+  }
 }
 .container_Port{
     width: 90%;
