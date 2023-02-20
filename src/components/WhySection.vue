@@ -28,17 +28,6 @@
           Infancy. Various Versions Have Evolved Over The Years, Sometimes By
           Accident, Sometimes On Purpose (Injected Humour And The Like).
         </p>
-        <p>
-          It Is A Long Established Fact That A Reader Will Be Distracted By The
-          Readable Content Of A Page When Looking At Its Layout. The Point Of
-          Using Lorem Ipsum Is That It Has A More-Or-Less Normal Distribution Of
-          Letters, As Opposed To Using 'Content Here, Content Here', Making It
-          Look Like Readable English. Many Desktop Publishing Packages And Web
-          Page Editors Now Use Lorem Ipsum As Their Default Model Text, And A
-          Search For 'Lorem Ipsum' Will Uncover Many Web Sites Still In Their
-          Infancy. Various Versions Have Evolved Over The Years, Sometimes By
-          Accident, Sometimes On Purpose (Injected Humour And The Like).
-        </p>
         <div class="botton">
           <button>Get More</button>
           <img src="@/assets/image/arrow.png" width="40" />
@@ -70,7 +59,7 @@
   margin: var(--marginTopBotton) 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 480px) {
      row-gap:  200px;
   }
@@ -78,12 +67,12 @@
     position: relative;
     img {
       position: absolute;
-      left: -10px;
-      width: 100%;
+      bottom: -20%;
+      left: -10%;
+      width: 90%;
     }
   }
   .content {
-    margin-top: 80px;
     text-align: justify;
     padding: 20px 50px;
     h3 {

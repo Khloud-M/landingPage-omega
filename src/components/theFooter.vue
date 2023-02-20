@@ -90,7 +90,7 @@ footer {
     .buton {
       display: flex;
       flex-direction: row;
-      // justify-content: space-between;
+      justify-content: space-between;
       align-items: center;
       background-color: #fff;
       border-radius: 20px;

@@ -89,7 +89,6 @@
         }
       }
       p {
-        text-align: justify;
         padding-top: 15px;
       }
     }

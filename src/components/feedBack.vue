@@ -104,7 +104,11 @@
   .content {
     width: 30%;
     height: 300px;
-    margin: auto 0;
+    margin: auto 40px ;
+    img{
+        width: 40px;
+        margin: 20px 0 ;
+      }
     @media (max-width: 480px) {
       & {
         width: 100%;
