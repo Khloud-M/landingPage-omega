@@ -103,7 +103,7 @@ export default {
         {
           image: require("@/assets/image/s1.png"),
           image2: require("@/assets/image/1.png"),
-          title: "Inbody Scan",
+          title: "Inbody Analysis",
           description:
             " Many People Now Need To Have A Healthy System To Follow To Improve And Control Their Health, ",
           list: "",
